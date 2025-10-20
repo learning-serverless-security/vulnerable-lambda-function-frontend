@@ -33,4 +33,6 @@ aws s3api put-public-access-block \
 aws s3 cp index.html s3://$BUCKET_NAME/index.html
 
 aws s3 website "s3://$BUCKET_NAME/" --index-document index.html
+
+aws s3 cp backup s3://$BUCKET_NAME/backup --recursive
 ```
